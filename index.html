@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.Abishek's Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        #about h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        #about p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Skills Section */
+        #skills {
+            background-color: #e9e9e9;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        #skills h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        #skills ul {
+            list-style-type: none;
+            display: inline-block;
+            text-align: left;
+        }
+
+        #skills ul li {
+            font-size: 18px;
+            padding: 10px 0;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+
+        #projects h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .project-cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #e9e9e9;
+            padding: 60px 0;
+        }
+
+        #contact h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: grid;
+            gap: 20px;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        form label {
+            font-size: 18px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h1>Hi, I'm R.Abishek</h1>
+            <p>Welcome to my portfolio! I'm a passionate web developer with expertise in front-end and back-end development. Check out my work below!</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <p>Short description of project 1.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <p>Short description of project 2.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>Project 3</h3>
+                    <p>Short description of project 3.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to collaborate or have any questions, feel free to reach out!</p>
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <p><strong>Email:</strong> abishek152006@gmail.com</p>
+                <p><strong>Phone:</strong> 7448441127</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 R.Abishek. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
